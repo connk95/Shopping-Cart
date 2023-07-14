@@ -1,0 +1,76 @@
+html,
+body,
+#app {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+#app > div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+#options > ul {
+  display: flex;
+  flex-direction: row;
+}
+
+p,
+h2,
+li {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+li {
+  font-size: 18px;
+  margin: 10px 10px 10px 10px;
+  list-style-type: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
+#sidebar {
+  width: 20%;
+  display: flex;
+  padding-top: 80px;
+}
+
+#shop {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+}
