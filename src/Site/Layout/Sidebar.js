@@ -7,12 +7,13 @@ const Sidebar = ({ department, setDepartment }) => {
   return (
     <div id="sidebar">
       <ul>
-        <li onClick={() => setDepartment("tops")}>Tops</li>
-        <li onClick={() => setDepartment("bottoms")}>Bottoms</li>
-        <li onClick={() => setDepartment("outer")}>Outer</li>
-        <li onClick={() => setDepartment("bags")}>Bags</li>
-        <li onClick={() => setDepartment("shoes")}>Shoes</li>
-        <li onClick={() => setDepartment("accessories")}>Accessories</li>
+        <li onClick={() => setDepartment("travel")}>Travel</li>
+        <li onClick={() => setDepartment("celebrations")}>Celebrations</li>
+        <li onClick={() => setDepartment("romantic")}>Romantic</li>
+        {/* <li onClick={() => setDepartment("family")}>Family</li> */}
+        <li onClick={() => setDepartment("school")}>School</li>
+        <li onClick={() => setDepartment("sad")}>Sad</li>
+        <li onClick={() => setDepartment("other")}>Other</li>
       </ul>
     </div>
   );

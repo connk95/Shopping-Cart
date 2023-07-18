@@ -12,10 +12,12 @@ const Product = ({ cart, setCart, products, index }) => {
         <p id="name"></p>
         <div>
           <p id="price"></p>
-          <select name="size" id="size"></select>
-          <button id="add"></button>
+          <select name="time" id="time"></select>
+          <button id="add" onClick={addCart}></button>
         </div>
       </div>
     </div>
   );
 };
+
+export default Product;

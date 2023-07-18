@@ -6,11 +6,14 @@ import Shop from "./Site/Layout/Shop/Shop";
 import Cart from "./Site/Layout/Cart/Cart";
 import About from "./Site/Layout/About/About";
 import Nav from "./Site/Layout/Nav";
+import productList from "./Site/Products/ProductList";
 
 const App = () => {
   const [cart, setCart] = useState([]);
-  const [products, setProducts] = useState([]);
-  const [page, setPage] = useState([]);
+  const [products, setProducts] = useState(productList);
+  // const [page, setPage] = useState([]);
+
+  console.log(products["travel"]);
 
   return (
     <div id="app">
@@ -19,8 +22,8 @@ const App = () => {
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route path="/shop" element={<Shop products={products} />} />
+        <Route path="/cart" element={<Cart cart={cart} />} />
         <Route path="/about" element={<About />} />
       </Routes>
     </div>
