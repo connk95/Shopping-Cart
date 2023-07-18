@@ -6,29 +6,33 @@ const Shop = ({ products }) => {
   const [department, setDepartment] = useState("");
   const [currentProducts, setCurrentProducts] = useState();
 
+  //   let allProducts = Object.values(products[0].travel);
+
   useEffect(() => {
-    const departmentSelect = () => {
-      if (department === "travel") {
-        //display only travel
-        setCurrentProducts(products[0].department);
-      } else if (department === "celebrations") {
-        //display only celebrations
-      } else if (department === "romantic") {
-        //display only romantic
-        //   } else if (department === "family") {
-        //display only family
-      } else if (department === "school") {
-        //display only school
-      } else if (department === "sad") {
-        //display only sad
-      } else if (department === "other") {
-        //display only other
-      } else {
-        //display all
-        setCurrentProducts(products[0].travel);
-      }
-    };
-  });
+    if (department === "travel") {
+      //display only travel
+      setCurrentProducts(Object.values(products[0]["travel"]));
+      console.log(currentProducts);
+      currentProducts.forEach((memory) => {
+        console.log(memory.title);
+        console.log(memory.asset);
+      });
+    } else if (department === "celebrations") {
+      //display only celebrations
+    } else if (department === "romantic") {
+      //display only romantic
+      //   } else if (department === "family") {
+      //display only family
+    } else if (department === "school") {
+      //display only school
+    } else if (department === "sad") {
+      //display only sad
+    } else if (department === "other") {
+      //display only other
+    } else {
+      //display all
+    }
+  }, [department]);
 
   return currentProducts.map((currentProducts, index) => (
     <div>
@@ -36,7 +40,13 @@ const Shop = ({ products }) => {
       <div id="shop">
         <h2>{`${department}`}</h2>
         <div id="displayProducts">
-          <Product index={index} currentProducts={currentProducts} />
+          <Product
+            key={`product${index}`}
+            index={index}
+            asset={currentProducts.asset}
+            title={currentProducts.title}
+            setCurrentProducts={currentProducts}
+          />
         </div>
       </div>
     </div>

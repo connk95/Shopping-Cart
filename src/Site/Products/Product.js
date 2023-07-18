@@ -1,15 +1,23 @@
 import React from "react";
 
-const Product = ({ cart, setCart, products, index, currentProducts }) => {
+const Product = ({
+  cart,
+  setCart,
+  products,
+  index,
+  asset,
+  title,
+  currentProducts,
+}) => {
   const addCart = () => {
     setCart([...cart, products.name]);
   };
 
   return (
-    <div id={`${index}product`}>
-      <img className="productImage" src={`${currentProducts.asset}`}></img>
+    <div id={`card${index}`}>
+      <img className="productImage" src={`${asset}`}></img>
       <div id="productDesc">
-        <p id="name"></p>
+        <p id="name">{`${title}`}</p>
         <div>
           <p id="price"></p>
           <select name="time" id="time"></select>
