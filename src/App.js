@@ -13,7 +13,13 @@ const App = () => {
   const [products, setProducts] = useState(productList);
   // const [page, setPage] = useState([]);
 
-  console.log(products["travel"]);
+  let allProducts = Object.values(products[0].travel);
+
+  allProducts.forEach((memory, index) => {
+    console.log(memory.asset);
+  });
+
+  console.log(allProducts);
 
   return (
     <div id="app">

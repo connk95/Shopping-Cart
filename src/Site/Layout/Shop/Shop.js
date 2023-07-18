@@ -10,7 +10,7 @@ const Shop = ({ products }) => {
     const departmentSelect = () => {
       if (department === "travel") {
         //display only travel
-        setCurrentProducts(products[0]["travel"]);
+        setCurrentProducts(products[0].department);
       } else if (department === "celebrations") {
         //display only celebrations
       } else if (department === "romantic") {
@@ -25,6 +25,7 @@ const Shop = ({ products }) => {
         //display only other
       } else {
         //display all
+        setCurrentProducts(products[0].travel);
       }
     };
   });
@@ -35,7 +36,7 @@ const Shop = ({ products }) => {
       <div id="shop">
         <h2>{`${department}`}</h2>
         <div id="displayProducts">
-          <Product index={index} />
+          <Product index={index} currentProducts={currentProducts} />
         </div>
       </div>
     </div>

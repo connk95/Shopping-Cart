@@ -1,13 +1,13 @@
 import React from "react";
 
-const Product = ({ cart, setCart, products, index }) => {
+const Product = ({ cart, setCart, products, index, currentProducts }) => {
   const addCart = () => {
     setCart([...cart, products.name]);
   };
 
   return (
     <div id={`${index}product`}>
-      <img></img>
+      <img className="productImage" src={`${currentProducts.asset}`}></img>
       <div id="productDesc">
         <p id="name"></p>
         <div>
