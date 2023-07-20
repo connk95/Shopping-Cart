@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Product = ({ cart, setCart, products, index, asset, title, age }) => {
+const Product = ({ cart, setCart, index, asset, title, age }) => {
+  const [allAges] = useState([...Array(age + 1).keys()]);
   const addCart = () => {
-    setCart([...cart, products.name]);
+    setCart([...cart, title]);
   };
 
-  const allAges = [...Array(age + 1).keys()];
+  console.log(cart);
 
   return (
     <div id={`card${index}`} className="productCard">

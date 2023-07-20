@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Sidebar from "../Sidebar";
 import Product from "../../Products/Product";
 
-const Shop = ({ allProducts, age }) => {
+const Shop = ({ allProducts, age, cart, setCart }) => {
   const [department, setDepartment] = useState("");
   const [departmentList] = useState(
     allProducts.map((category) => {
@@ -16,8 +16,6 @@ const Shop = ({ allProducts, age }) => {
       })
       .flat(2)
   );
-
-  console.log(departmentList);
 
   useEffect(() => {
     if (department) {
@@ -51,8 +49,9 @@ const Shop = ({ allProducts, age }) => {
               index={index}
               asset={currentProducts.asset}
               title={currentProducts.title}
-              currentProducts={currentProducts}
               age={age}
+              cart={cart}
+              setCart={setCart}
             />
           ))}
         </div>

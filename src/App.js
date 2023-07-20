@@ -10,10 +10,8 @@ import productList from "./Site/Products/ProductList";
 
 const App = () => {
   const [cart, setCart] = useState([]);
-  const [allProducts, setAllProducts] = useState(productList);
+  const [allProducts] = useState(productList);
   const [age, setAge] = useState();
-
-  console.log(age);
 
   return (
     <div id="app">
@@ -24,7 +22,14 @@ const App = () => {
         <Route path="/" element={<Home age={age} setAge={setAge} />} />
         <Route
           path="/shop"
-          element={<Shop allProducts={allProducts} age={age} />}
+          element={
+            <Shop
+              allProducts={allProducts}
+              age={age}
+              cart={cart}
+              setCart={setCart}
+            />
+          }
         />
         <Route path="/cart" element={<Cart cart={cart} />} />
         <Route path="/about" element={<About />} />
