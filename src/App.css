@@ -15,12 +15,6 @@ body,
   width: 100%;
 }
 
-#app > div {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
 #navbar {
   display: flex;
   flex-direction: row;
@@ -71,6 +65,51 @@ a:active {
 
 #shop {
   display: flex;
+  flex-direction: column;
   width: 90%;
   justify-content: center;
+}
+
+#displayProducts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.productCard {
+  margin: 1rem;
+}
+
+.productImage {
+  height: 200px;
+  width: 300px;
+  border-radius: 4px;
+}
+
+#homeInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+#homePage {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+}
+
+#ageForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#shopPage {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }

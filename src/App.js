@@ -10,17 +10,22 @@ import productList from "./Site/Products/ProductList";
 
 const App = () => {
   const [cart, setCart] = useState([]);
-  const [products, setProducts] = useState(productList);
-  // const [page, setPage] = useState([]);
+  const [allProducts, setAllProducts] = useState(productList);
+  const [age, setAge] = useState();
+
+  console.log(age);
 
   return (
     <div id="app">
       <nav>
-        <Nav />
+        <Nav age={age} />
       </nav>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/shop" element={<Shop products={products} />} />
+        <Route path="/" element={<Home age={age} setAge={setAge} />} />
+        <Route
+          path="/shop"
+          element={<Shop allProducts={allProducts} age={age} />}
+        />
         <Route path="/cart" element={<Cart cart={cart} />} />
         <Route path="/about" element={<About />} />
       </Routes>

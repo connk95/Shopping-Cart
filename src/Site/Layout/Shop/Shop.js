@@ -2,55 +2,63 @@ import React, { useEffect, useState } from "react";
 import Sidebar from "../Sidebar";
 import Product from "../../Products/Product";
 
-const Shop = ({ products }) => {
+const Shop = ({ allProducts, age }) => {
   const [department, setDepartment] = useState("");
-  const [currentProducts, setCurrentProducts] = useState();
+  const [departmentList] = useState(
+    allProducts.map((category) => {
+      return category.name;
+    })
+  );
+  const [currentProducts, setCurrentProducts] = useState(
+    allProducts
+      .map((category) => {
+        return category.products;
+      })
+      .flat(2)
+  );
 
-  //   let allProducts = Object.values(products[0].travel);
+  console.log(departmentList);
 
   useEffect(() => {
-    if (department === "travel") {
-      //display only travel
-      setCurrentProducts(Object.values(products[0]["travel"]));
-      console.log(currentProducts);
-      currentProducts.forEach((memory) => {
-        console.log(memory.title);
-        console.log(memory.asset);
-      });
-    } else if (department === "celebrations") {
-      //display only celebrations
-    } else if (department === "romantic") {
-      //display only romantic
-      //   } else if (department === "family") {
-      //display only family
-    } else if (department === "school") {
-      //display only school
-    } else if (department === "sad") {
-      //display only sad
-    } else if (department === "other") {
-      //display only other
+    if (department) {
+      setCurrentProducts(
+        allProducts.find((object) => object.name === department).products
+      );
     } else {
-      //display all
+      setCurrentProducts(
+        allProducts
+          .map((category) => {
+            return category.products;
+          })
+          .flat(2)
+      );
     }
-  }, [department]);
+  }, [department, allProducts, setCurrentProducts]);
 
-  return currentProducts.map((currentProducts, index) => (
-    <div>
-      <Sidebar department={department} setDepartment={setDepartment} />
+  return (
+    <div id="shopPage">
+      <Sidebar
+        department={department}
+        setDepartment={setDepartment}
+        departmentList={departmentList}
+      />
       <div id="shop">
         <h2>{`${department}`}</h2>
         <div id="displayProducts">
-          <Product
-            key={`product${index}`}
-            index={index}
-            asset={currentProducts.asset}
-            title={currentProducts.title}
-            setCurrentProducts={currentProducts}
-          />
+          {currentProducts.map((currentProducts, index) => (
+            <Product
+              key={`product${index}`}
+              index={index}
+              asset={currentProducts.asset}
+              title={currentProducts.title}
+              currentProducts={currentProducts}
+              age={age}
+            />
+          ))}
         </div>
       </div>
     </div>
-  ));
+  );
 };
 
 export default Shop;
