@@ -27,21 +27,21 @@ const productList = [
   {
     name: "Travel",
     products: [
-      { title: "Paris Vacation", asset: paris },
-      { title: "Tokyo Vacation", asset: tokyo },
-      { title: "Mountain Vacation", asset: mountains },
-      { title: "New York Vacation", asset: nyc },
-      { title: "Beach Vacation", asset: beach },
+      { title: "Paris vacation", asset: paris },
+      { title: "Tokyo vacation", asset: tokyo },
+      { title: "Mountain vacation", asset: mountains },
+      { title: "New York vacation", asset: nyc },
+      { title: "Beach vacation", asset: beach },
     ],
   },
   {
     name: "Celebrations",
     products: [
-      { title: "Birthday Party", asset: birthday },
-      { title: "Christmas Day", asset: christmas },
-      { title: "Fireworks Festival", asset: fireworks },
+      { title: "Birthday party", asset: birthday },
+      { title: "Christmas day", asset: christmas },
+      { title: "Fireworks festival", asset: fireworks },
       { title: "Your team won", asset: teamVictory },
-      { title: "Work Party", asset: workParty },
+      { title: "Work party", asset: workParty },
     ],
   },
   {
@@ -49,8 +49,8 @@ const productList = [
     products: [
       { title: "Proposal", asset: proposal },
       { title: "A walk on the beach", asset: beachWalk },
-      { title: "First Date", asset: firstDate },
-      { title: "Valentines Day", asset: valentines },
+      { title: "First date", asset: firstDate },
+      { title: "Valentines day", asset: valentines },
       { title: "Wedding", asset: wedding },
     ],
   },
@@ -58,9 +58,9 @@ const productList = [
     name: "School",
     products: [
       { title: "Graduation", asset: graduation },
-      { title: "Championship Victory", asset: schoolVictory },
+      { title: "Championship victory", asset: schoolVictory },
       { title: "First day at school", asset: firstDay },
-      { title: "Group Project", asset: groupProject },
+      { title: "Group project", asset: groupProject },
     ],
   },
   {
@@ -68,7 +68,7 @@ const productList = [
     products: [
       { title: "Got fired", asset: fired },
       { title: "Got lost", asset: lost },
-      { title: "Broke Up", asset: breakUp },
+      { title: "Broke up", asset: breakUp },
       { title: "Lost the game", asset: loss },
     ],
   },

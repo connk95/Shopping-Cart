@@ -1,26 +1,33 @@
 import React, { useState } from "react";
 
-const Product = ({ cart, setCart, index, asset, title, age }) => {
-  const [allAges] = useState([...Array(age + 1).keys()]);
-  const addCart = () => {
-    setCart([...cart, title]);
-  };
+const Product = ({ addCart, index, asset, title, allAges }) => {
+  const [selectedAge, setSelectedAge] = useState();
 
-  console.log(cart);
+  const handleAge = (e) => {
+    setSelectedAge(e.target.value);
+  };
 
   return (
     <div id={`card${index}`} className="productCard">
       <img className="productImage" src={`${asset}`} alt={`${title}`}></img>
       <div id="productDesc">
-        <p id="name">{`${title}`}</p>
-        <div>
-          <p id="price"></p>
-          <select name="time" id="time">
-            {allAges.map((age) => (
-              <option value={age}>{age}</option>
-            ))}
-          </select>
-          <button id="add" onClick={addCart}>
+        <div className="productName">
+          <p className="name">{`${title}`}</p>
+          <div className="break"></div>
+        </div>
+        <div className="productOptions">
+          {/* <p className="price"></p> */}
+          <div>
+            <label for="time">implant at age: </label>
+            <select name="time" id="time" onChange={handleAge}>
+              {allAges.map((ages) => (
+                <option id={"selectAge"} value={ages}>
+                  {ages}
+                </option>
+              ))}
+            </select>
+          </div>
+          <button id="add" onClick={() => addCart(title, selectedAge)}>
             Add to cart
           </button>
         </div>

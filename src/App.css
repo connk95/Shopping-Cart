@@ -29,7 +29,8 @@ body,
 
 p,
 h2,
-li {
+li,
+label {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -57,6 +58,18 @@ a:active {
   text-decoration: none;
 }
 
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
 #sidebar {
   width: 20%;
   display: flex;
@@ -77,13 +90,26 @@ a:active {
 }
 
 .productCard {
+  display: flex;
+  flex-direction: column;
   margin: 1rem;
 }
 
 .productImage {
   height: 200px;
   width: 300px;
-  border-radius: 4px;
+}
+
+#productDesc {
+  display: flex;
+  flex-direction: column;
+}
+
+.productOptions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #homeInput {
@@ -99,6 +125,7 @@ a:active {
   flex-direction: row;
   justify-content: center;
   height: 100%;
+  /* background-image: url("../src/Site/Products/assets/background/main-qimg-3528d34637d0cd0f1faf11a141ba3514.webp"); */
 }
 
 #ageForm {
@@ -112,4 +139,55 @@ a:active {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+}
+
+a {
+  color: inherit;
+}
+
+#sidebarItem {
+  cursor: pointer;
+}
+
+button {
+  background: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 24px;
+  min-width: 120px;
+}
+
+select {
+  border: 1px solid black;
+  min-height: 24px;
+  min-width: 80px;
+}
+
+select:focus {
+  outline: none;
+}
+
+.name {
+  font-size: 14px;
+  color: rgb(50, 50, 50);
+}
+
+label {
+  font-size: 14px;
+  color: rgb(50, 50, 50);
+}
+
+.productName {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.break {
+  width: 100px;
+  height: 10px;
+  background-color: black;
+  flex-grow: 1;
+  margin-right: 10px;
 }

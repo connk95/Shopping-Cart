@@ -16,6 +16,16 @@ const Shop = ({ allProducts, age, cart, setCart }) => {
       })
       .flat(2)
   );
+  const [allAges, setAllAges] = useState([...Array(age + 1).keys()]);
+
+  useEffect(() => {
+    setAllAges([...Array(age + 1).keys()]);
+  }, [age]);
+
+  const addCart = (title, age) => {
+    setCart([...cart, { title, age }]);
+    localStorage.setItem("cart", [...cart, { title, age }]);
+  };
 
   useEffect(() => {
     if (department) {
@@ -43,14 +53,15 @@ const Shop = ({ allProducts, age, cart, setCart }) => {
       <div id="shop">
         <h2>{`${department}`}</h2>
         <div id="displayProducts">
-          {currentProducts.map((currentProducts, index) => (
+          {currentProducts.map((currentProduct, index) => (
             <Product
               key={`product${index}`}
               index={index}
-              asset={currentProducts.asset}
-              title={currentProducts.title}
+              asset={currentProduct.asset}
+              title={currentProduct.title}
               age={age}
-              cart={cart}
+              allAges={allAges}
+              addCart={addCart}
               setCart={setCart}
             />
           ))}
