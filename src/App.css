@@ -43,7 +43,6 @@ h1 {
 }
 
 li {
-  font-size: 18px;
   margin: 10px 10px 10px 10px;
   list-style-type: none;
 }
@@ -71,6 +70,15 @@ input[type="reset"] {
   font: inherit;
   cursor: pointer;
   outline: inherit;
+}
+
+button:active {
+  min-height: 22px;
+  min-width: 116px;
+  transform: translateX(-2px);
+}
+button:hover {
+  background-color: rgb(75, 75, 75);
 }
 
 #sidebar {
@@ -206,17 +214,12 @@ label {
 #displayCart {
   display: flex;
   flex-direction: column;
-  margin: 0 10rem 0 10rem;
-}
-
-#displayCart > p {
-  align-items: end;
+  margin: 0 15rem 0 15rem;
 }
 
 #cartItems {
   display: flex;
   flex-direction: column;
-  /* margin: 0 10rem 0 10rem; */
 }
 
 #displayCart > li {
@@ -236,4 +239,20 @@ label {
 .cartImage {
   height: 80px;
   width: 120px;
+}
+
+#subtotal > div {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2rem;
+  text-align: end;
+  font-weight: bold;
+}
+
+#displayCart > h2 {
+  margin-left: 10px;
+}
+
+.remove {
+  cursor: pointer;
 }

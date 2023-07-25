@@ -27,14 +27,25 @@ const App = () => {
   //   }
   // }, []);
 
-  console.log(cart);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     const userAge =
       new Date().getFullYear() - document.getElementById("ageInput").value;
     setAge(userAge);
     localStorage.setItem("age", userAge);
+  };
+
+  // const handleRemove = (title, age) => {
+  //   setCart((items) =>
+  //     items.filter((item) => {
+  //       return item.title !== title && item.age !== age;
+  //     })
+  //   );
+  //   console.log(cart);
+  // };
+
+  const handleRemove = (index) => {
+    setCart([...cart.slice(0, index), ...cart.slice(index + 1)]);
   };
 
   if (!age) {
@@ -68,7 +79,10 @@ const App = () => {
             />
           }
         />
-        <Route path="/cart" element={<Cart cart={cart} />} />
+        <Route
+          path="/cart"
+          element={<Cart cart={cart} handleRemove={handleRemove} />}
+        />
         <Route path="/about" element={<About />} />
       </Routes>
     </div>
