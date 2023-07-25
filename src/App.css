@@ -9,10 +9,9 @@ body,
 #root {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   height: 100%;
-  width: 100%;
+  margin: 2rem;
 }
 
 #navbar {
@@ -25,6 +24,10 @@ body,
 #options > ul {
   display: flex;
   flex-direction: row;
+}
+
+ul {
+  padding: 0;
 }
 
 p,
@@ -145,7 +148,7 @@ a {
   color: inherit;
 }
 
-#sidebarItem {
+.sidebarItem {
   cursor: pointer;
 }
 
@@ -190,4 +193,47 @@ label {
   background-color: black;
   flex-grow: 1;
   margin-right: 10px;
+}
+
+#selected {
+  text-decoration: underline;
+}
+
+#shop > h2 {
+  margin-left: 1rem;
+}
+
+#displayCart {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10rem 0 10rem;
+}
+
+#displayCart > p {
+  align-items: end;
+}
+
+#cartItems {
+  display: flex;
+  flex-direction: column;
+  /* margin: 0 10rem 0 10rem; */
+}
+
+#displayCart > li {
+  width: 100%;
+}
+
+.cartInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cartInfo > p {
+  margin: 0 2rem 0 2rem;
+}
+
+.cartImage {
+  height: 80px;
+  width: 120px;
 }

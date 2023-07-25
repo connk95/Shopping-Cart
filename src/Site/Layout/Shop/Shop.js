@@ -22,9 +22,9 @@ const Shop = ({ allProducts, age, cart, setCart }) => {
     setAllAges([...Array(age + 1).keys()]);
   }, [age]);
 
-  const addCart = (title, age) => {
-    setCart([...cart, { title, age }]);
-    localStorage.setItem("cart", [...cart, { title, age }]);
+  const addCart = (title, age, price, asset) => {
+    setCart([...cart, { title, age, price, asset }]);
+    localStorage.setItem("cart", [...cart, { title, age, price, asset }]);
   };
 
   useEffect(() => {
@@ -59,6 +59,7 @@ const Shop = ({ allProducts, age, cart, setCart }) => {
               index={index}
               asset={currentProduct.asset}
               title={currentProduct.title}
+              price={currentProduct.price}
               age={age}
               allAges={allAges}
               addCart={addCart}

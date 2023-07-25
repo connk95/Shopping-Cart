@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 //static nav bar which includes department selector, shop title, and cart
-const Nav = ({ age }) => {
+const Nav = ({ age, cart }) => {
   if (age) {
     return (
       <div id="navbar">
@@ -26,7 +26,7 @@ const Nav = ({ age }) => {
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/cart">Cart</Link>
+              <Link to="/cart">Cart{`(${cart.length})`}</Link>
             </li>
           </ul>
         </div>

@@ -20,12 +20,12 @@ const App = () => {
     }
   }, []);
 
-  useEffect(() => {
-    const cachedCart = localStorage.getItem("cart");
-    if (cachedCart) {
-      setCart(cachedCart);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const cachedCart = localStorage.getItem("cart");
+  //   if (cachedCart) {
+  //     setCart(cachedCart);
+  //   }
+  // }, []);
 
   console.log(cart);
 
@@ -53,7 +53,7 @@ const App = () => {
   return (
     <div id="app">
       <nav>
-        <Nav age={age} />
+        <Nav age={age} cart={cart} />
       </nav>
       <Routes>
         <Route path="/" element={<Home age={age} setAge={setAge} />} />
