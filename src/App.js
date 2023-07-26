@@ -13,12 +13,12 @@ const App = () => {
   const [allProducts] = useState(productList);
   const [age, setAge] = useState();
 
-  useEffect(() => {
-    const cachedAge = localStorage.getItem("age");
-    if (cachedAge) {
-      setAge(Number(cachedAge));
-    }
-  }, []);
+  // useEffect(() => {
+  //   const cachedAge = localStorage.getItem("age");
+  //   if (cachedAge) {
+  //     setAge(Number(cachedAge));
+  //   }
+  // }, []);
 
   // useEffect(() => {
   //   const cachedCart = localStorage.getItem("cart");
@@ -35,15 +35,6 @@ const App = () => {
     localStorage.setItem("age", userAge);
   };
 
-  // const handleRemove = (title, age) => {
-  //   setCart((items) =>
-  //     items.filter((item) => {
-  //       return item.title !== title && item.age !== age;
-  //     })
-  //   );
-  //   console.log(cart);
-  // };
-
   const handleRemove = (index) => {
     setCart([...cart.slice(0, index), ...cart.slice(index + 1)]);
   };
@@ -53,8 +44,8 @@ const App = () => {
       <div id="homeInput">
         <form onSubmit={handleSubmit} id="ageForm">
           <h1>Please enter your birth year</h1>
-          <input type="number" id="ageInput"></input>
           <p>This information allows us to tailor our service to your life</p>
+          <input type="number" id="ageInput"></input>
           <button type="submit">Enter store</button>
         </form>
       </div>

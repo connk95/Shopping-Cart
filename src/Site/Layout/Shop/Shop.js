@@ -51,7 +51,7 @@ const Shop = ({ allProducts, age, cart, setCart }) => {
         departmentList={departmentList}
       />
       <div id="shop">
-        <h2>{`${department}`}</h2>
+        {/* <h2>{`${department}`}</h2> */}
         <div id="displayProducts">
           {currentProducts.map((currentProduct, index) => (
             <Product

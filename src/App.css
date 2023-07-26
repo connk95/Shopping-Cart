@@ -11,7 +11,6 @@ body,
   flex-direction: column;
   align-items: center;
   height: 100%;
-  margin: 2rem;
 }
 
 #navbar {
@@ -19,6 +18,7 @@ body,
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
+  margin: 2rem;
 }
 
 #options > ul {
@@ -32,6 +32,7 @@ ul {
 
 p,
 h2,
+h3,
 li,
 label {
   font-family: Arial, Helvetica, sans-serif;
@@ -39,7 +40,8 @@ label {
 
 h1 {
   font-size: 36px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
 li {
@@ -56,8 +58,30 @@ a:visited {
 a:hover {
   text-decoration: none;
 }
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.sidebarItem:hover {
+  text-decoration: underline;
+}
+
+.remove:hover {
+  text-decoration: underline;
+}
+
+#titleText:hover {
+  text-decoration: none;
+}
+
 a:active {
   text-decoration: none;
+}
+
+.activeSidebar {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 button,
@@ -98,6 +122,7 @@ button:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 6rem;
 }
 
 .productCard {
@@ -131,12 +156,16 @@ button:hover {
   height: 80%;
 }
 
+#ageInput {
+  margin: 1rem;
+}
+
 #homePage {
   display: flex;
   flex-direction: row;
   justify-content: center;
   height: 100%;
-  /* background-image: url("../src/Site/Products/assets/background/main-qimg-3528d34637d0cd0f1faf11a141ba3514.webp"); */
+  background-size: cover;
 }
 
 #ageForm {
@@ -150,6 +179,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  margin: 2rem;
 }
 
 a {
@@ -255,4 +285,24 @@ label {
 
 .remove {
   cursor: pointer;
+}
+
+#aboutPage {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15rem 0 15rem;
+}
+
+#homePage > h2 {
+  color: white;
+  position: relative;
+  top: 2rem;
+  right: 32rem;
+}
+
+#homePage > h3 {
+  color: white;
+  position: fixed;
+  bottom: 1rem;
+  left: 2rem;
 }

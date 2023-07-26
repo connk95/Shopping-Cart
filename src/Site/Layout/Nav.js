@@ -8,7 +8,7 @@ const Nav = ({ age, cart }) => {
       <div id="navbar">
         <div id="department">
           <ul>
-            <li>
+            <li className="navLink">
               <Link to="/shop">Memories</Link>
             </li>
           </ul>
@@ -22,11 +22,11 @@ const Nav = ({ age, cart }) => {
           <ul>
             {/* <li>Login</li> */}
             {/* <li>Wishlist</li> */}
-            <li>
+            <li className="navLink">
               <Link to="/about">About</Link>
             </li>
-            <li>
-              <Link to="/cart">Cart{`(${cart.length})`}</Link>
+            <li className="navLink">
+              <Link to="/cart">Cart{`[${cart.length}]`}</Link>
             </li>
           </ul>
         </div>
