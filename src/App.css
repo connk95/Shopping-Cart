@@ -295,9 +295,9 @@ label {
 
 #homePage > h2 {
   color: white;
-  position: relative;
-  top: 2rem;
-  right: 32rem;
+  position: absolute;
+  top: 10rem;
+  left: 2rem;
 }
 
 #homePage > h3 {

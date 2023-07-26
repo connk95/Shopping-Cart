@@ -1,10 +1,8 @@
 {
   "name": "shopping",
   "version": "0.1.0",
-  "repository": {
-    "url": "git+https://github.com/connk95/Shopping-Cart.git"
-  },
-  "private": true,
+  "homepage": "https://connk95.github.io/Shopping-Cart/",
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
