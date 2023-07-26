@@ -15,8 +15,6 @@ const images = [
 const Home = ({ age }) => {
   const [value, setValue] = useState(0);
 
-  console.log(images);
-
   useEffect(() => {
     const interval = setInterval(() => {
       setValue((v) => {
