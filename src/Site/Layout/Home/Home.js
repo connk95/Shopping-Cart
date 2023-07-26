@@ -20,7 +20,7 @@ const Home = ({ age }) => {
       setValue((v) => {
         return v === 3 ? 0 : v + 1;
       });
-    }, 10000);
+    }, 20000);
     return () => clearInterval(interval);
   }, []);
 
