@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b7a1cd99.css",
-    "main.js": "/static/js/main.8b6e8213.js",
+    "main.js": "/static/js/main.c62a87bd.js",
     "static/media/paris.jpg": "/static/media/paris.2fe2b3be1f6ae85a4c4d.jpg",
     "static/media/grad.jpg": "/static/media/grad.4b922ef4f1873a19328b.jpg",
     "static/media/date.jpg": "/static/media/date.4f7329087c47ba8cba19.jpg",
@@ -32,10 +32,10 @@
     "static/media/pexels-antoni-shkraba-production-8279206.jpg": "/static/media/pexels-antoni-shkraba-production-8279206.95457409e82654571454.jpg",
     "index.html": "/index.html",
     "main.b7a1cd99.css.map": "/static/css/main.b7a1cd99.css.map",
-    "main.8b6e8213.js.map": "/static/js/main.8b6e8213.js.map"
+    "main.c62a87bd.js.map": "/static/js/main.c62a87bd.js.map"
   },
   "entrypoints": [
     "static/css/main.b7a1cd99.css",
-    "static/js/main.8b6e8213.js"
+    "static/js/main.c62a87bd.js"
   ]
 }
