@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Shopping-Cart/static/css/main.b7a1cd99.css",
+    "main.css": "/Shopping-Cart/static/css/main.47f2cf1c.css",
     "main.js": "/Shopping-Cart/static/js/main.7fd4330b.js",
     "static/media/paris.jpg": "/Shopping-Cart/static/media/paris.2fe2b3be1f6ae85a4c4d.jpg",
     "static/media/grad.jpg": "/Shopping-Cart/static/media/grad.4b922ef4f1873a19328b.jpg",
@@ -31,11 +31,11 @@
     "static/media/couple-g7949a7cb5_1280.jpg": "/Shopping-Cart/static/media/couple-g7949a7cb5_1280.6e46da513d9cd2849ccf.jpg",
     "static/media/pexels-antoni-shkraba-production-8279206.jpg": "/Shopping-Cart/static/media/pexels-antoni-shkraba-production-8279206.95457409e82654571454.jpg",
     "index.html": "/Shopping-Cart/index.html",
-    "main.b7a1cd99.css.map": "/Shopping-Cart/static/css/main.b7a1cd99.css.map",
+    "main.47f2cf1c.css.map": "/Shopping-Cart/static/css/main.47f2cf1c.css.map",
     "main.7fd4330b.js.map": "/Shopping-Cart/static/js/main.7fd4330b.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7a1cd99.css",
+    "static/css/main.47f2cf1c.css",
     "static/js/main.7fd4330b.js"
   ]
 }
