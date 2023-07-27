@@ -33,6 +33,9 @@ const Cart = ({ cart, handleRemove }) => {
               </p>
             </div>
           </li>
+          <li>
+            <button id="checkout">Checkout</button>
+          </li>
         </ul>
       </div>
     </div>

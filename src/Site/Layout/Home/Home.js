@@ -22,7 +22,7 @@ const Home = ({ age }) => {
       });
     }, 10000);
     return () => clearInterval(interval);
-  }, []);
+  });
 
   if (age) {
     return (

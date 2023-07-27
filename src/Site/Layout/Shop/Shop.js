@@ -23,8 +23,10 @@ const Shop = ({ allProducts, age, cart, setCart }) => {
   }, [age]);
 
   const addCart = (title, age, price, asset) => {
-    setCart([...cart, { title, age, price, asset }]);
-    localStorage.setItem("cart", [...cart, { title, age, price, asset }]);
+    if (!cart.some((obj) => obj.title === title && obj.age === age)) {
+      setCart([...cart, { title, age, price, asset }]);
+    }
+    // localStorage.setItem("cart", [...cart, { title, age, price, asset }]);
   };
 
   useEffect(() => {
@@ -51,7 +53,6 @@ const Shop = ({ allProducts, age, cart, setCart }) => {
         departmentList={departmentList}
       />
       <div id="shop">
-        {/* <h2>{`${department}`}</h2> */}
         <div id="displayProducts">
           {currentProducts.map((currentProduct, index) => (
             <Product

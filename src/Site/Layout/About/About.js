@@ -20,7 +20,7 @@ const About = () => {
         you would like to remember having this experience.
       </p>
       <p>
-        As an introductory offer, the price of all memories have been reduced to
+        As an introductory offer, the price of all memories has been reduced to
         0.
       </p>
       <p>It's time to remember everything you've ever imagined.</p>
