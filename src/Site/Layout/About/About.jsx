@@ -10,7 +10,7 @@ const About = () => {
         satisfaction of a lifechanging experience, without the experience.
       </p>
       <p>
-        Using our groundbreaking technology, we are able to wirelessly download
+        Using our groundbreaking technology, we are able to wirelessly upload
         memories and experiences to your brain for a fraction of the cost of the
         real thing.
       </p>

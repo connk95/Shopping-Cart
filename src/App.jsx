@@ -35,10 +35,12 @@ const App = () => {
     // localStorage.setItem("age", userAge);
   };
 
+  //remove items from cart
   const handleRemove = (index) => {
     setCart([...cart.slice(0, index), ...cart.slice(index + 1)]);
   };
 
+  //render intro page which asks for user age
   if (!age) {
     return (
       <div id="homeInput">

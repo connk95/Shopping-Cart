@@ -16,6 +16,7 @@ const Sidebar = ({ department, setDepartment, departmentList }) => {
             onClick={() => {
               setDepartment(`${departmentList}`);
             }}
+            data-testid={`list-item-${departmentList}`}
           >
             {`${departmentList}`}
           </li>
