@@ -4,7 +4,7 @@ import svgr from "vite-plugin-svgr";
 import { defineConfig } from "vitest/config";
 
 export default defineConfig({
-  base: "/Shopping-Cart",
+  base: "/Shopping-Cart/",
   plugins: [
     svgr({
       svgrOptions: {
