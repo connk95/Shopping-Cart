@@ -26,7 +26,10 @@ describe("Sidebar", () => {
 
   test("renders list correctly", () => {
     render(
-      <Sidebar department={mockDepartment} departmentList={departmentList} />
+      <Sidebar
+        department={mockDepartment}
+        departmentList={mockDepartmentList}
+      />
     );
 
     const sidebarElement = screen.getByText("mock list item");
@@ -34,7 +37,31 @@ describe("Sidebar", () => {
     expect(sidebarElement).toBeInTheDocument();
   });
 
-  test("renders className correctly to activeSidebar", () => {});
+  test("renders className correctly to activeSidebar", () => {
+    const mockDepartmentList = ["mock department"];
 
-  test("renders className correctly to sidebarItem", () => {});
+    render(
+      <Sidebar
+        department={mockDepartment}
+        departmentList={mockDepartmentList}
+      />
+    );
+
+    expect(
+      screen.getByText("mock department", { selector: "activeSidebar" })
+    ).toBeInTheDocument();
+  });
+
+  test("renders className correctly to sidebarItem", () => {
+    render(
+      <Sidebar
+        department={mockDepartment}
+        departmentList={mockDepartmentList}
+      />
+    );
+
+    expect(
+      screen.getByText("mock list item", { selector: "sidebarItem" })
+    ).toBeInTheDocument();
+  });
 });

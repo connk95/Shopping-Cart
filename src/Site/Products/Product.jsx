@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const Product = ({ addCart, index, asset, title, price, allAges }) => {
   const [selectedAge, setSelectedAge] = useState();
 
+  //set age in cart
   const handleAge = (e) => {
     setSelectedAge(e.target.value);
   };

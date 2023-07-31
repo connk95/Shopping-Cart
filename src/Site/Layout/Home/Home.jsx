@@ -29,6 +29,7 @@ const Home = ({ age }) => {
       <div
         id="homePage"
         style={{ backgroundImage: `url(${images[value].image}` }}
+        data-testid={images[0].title}
       >
         <h2>Get started on your ideal mind.</h2>
         <h3>{images[value].title}, we've got that too.</h3>

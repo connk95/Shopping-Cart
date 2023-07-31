@@ -18,10 +18,12 @@ const Shop = ({ allProducts, age, cart, setCart }) => {
   );
   const [allAges, setAllAges] = useState([...Array(age + 1).keys()]);
 
+  //create an array of ages from age select
   useEffect(() => {
     setAllAges([...Array(age + 1).keys()]);
   }, [age]);
 
+  //add items to cart
   const addCart = (title, age, price, asset) => {
     if (!cart.some((obj) => obj.title === title && obj.age === age)) {
       setCart([...cart, { title, age, price, asset }]);
@@ -29,6 +31,7 @@ const Shop = ({ allProducts, age, cart, setCart }) => {
     // localStorage.setItem("cart", [...cart, { title, age, price, asset }]);
   };
 
+  //filter products by department name
   useEffect(() => {
     if (department) {
       setCurrentProducts(
