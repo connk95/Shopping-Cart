@@ -27,8 +27,8 @@ const Shop = ({ allProducts, age, cart, setCart }) => {
   const addCart = (title, age, price, asset) => {
     if (!cart.some((obj) => obj.title === title && obj.age === age)) {
       setCart([...cart, { title, age, price, asset }]);
+      return;
     }
-    // localStorage.setItem("cart", [...cart, { title, age, price, asset }]);
   };
 
   //filter products by department name

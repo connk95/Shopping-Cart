@@ -17,12 +17,16 @@ const Product = ({ addCart, index, asset, title, price, allAges }) => {
           <div className="break"></div>
         </div>
         <div className="productOptions">
-          {/* <p className="price"></p> */}
           <div>
-            <label for="time">Implant at age: </label>
-            <select name="time" id="time" onChange={handleAge}>
-              {allAges.map((ages) => (
-                <option id={"selectAge"} value={ages}>
+            <label htmlFor="time">Implant at age: </label>
+            <select
+              name="time"
+              id="time"
+              onChange={handleAge}
+              data-testid={`ageSelect-${title}`}
+            >
+              {allAges.map((ages, index) => (
+                <option key={`${ages}-${index}`} id={"selectAge"} value={ages}>
                   {ages}
                 </option>
               ))}
@@ -31,6 +35,7 @@ const Product = ({ addCart, index, asset, title, price, allAges }) => {
           <button
             id="add"
             onClick={() => addCart(title, selectedAge, price, asset)}
+            data-testid={`add-${title}`}
           >
             Add to cart
           </button>

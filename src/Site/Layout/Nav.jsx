@@ -20,8 +20,6 @@ const Nav = ({ age, cart }) => {
         </div>
         <div id="options">
           <ul>
-            {/* <li>Login</li> */}
-            {/* <li>Wishlist</li> */}
             <li className="navLink">
               <Link to="/about">About</Link>
             </li>
