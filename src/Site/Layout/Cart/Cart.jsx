@@ -7,7 +7,7 @@ const Cart = ({ cart, handleRemove }) => {
         <h2>Cart</h2>
         <ul id="cartItems">
           {cart.map((cartItem, index) => (
-            <li>
+            <li key={cartItem.title}>
               <div className="cartInfo">
                 <img
                   className="cartImage"

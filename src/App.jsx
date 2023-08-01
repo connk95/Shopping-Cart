@@ -13,26 +13,11 @@ const App = () => {
   const [allProducts] = useState(productList);
   const [age, setAge] = useState();
 
-  // useEffect(() => {
-  //   const cachedAge = localStorage.getItem("age");
-  //   if (cachedAge) {
-  //     setAge(Number(cachedAge));
-  //   }
-  // }, []);
-
-  // useEffect(() => {
-  //   const cachedCart = localStorage.getItem("cart");
-  //   if (cachedCart) {
-  //     setCart(cachedCart);
-  //   }
-  // }, []);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     const userAge =
       new Date().getFullYear() - document.getElementById("ageInput").value;
     setAge(userAge);
-    // localStorage.setItem("age", userAge);
   };
 
   //remove items from cart
@@ -53,7 +38,6 @@ const App = () => {
       </div>
     );
   }
-
   return (
     <div id="app">
       <nav>
