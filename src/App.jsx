@@ -35,8 +35,8 @@ const App = () => {
           <input
             type="number"
             id="ageInput"
-            min={new Date().getFullYear() - 100}
-            max={new Date().getFullYear()}
+            min={1900}
+            max={2023}
             required
           ></input>
           <button type="submit">Enter store</button>
