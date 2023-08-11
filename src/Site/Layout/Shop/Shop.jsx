@@ -20,7 +20,7 @@ const Shop = ({ allProducts, age, cart, setCart }) => {
 
   //create an array of ages from age select
   useEffect(() => {
-    setAllAges([...Array(age + 1).keys()]);
+    setAllAges([0, ...Array(age + 1).keys()]);
   }, [age]);
 
   //add items to cart

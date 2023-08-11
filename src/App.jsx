@@ -32,7 +32,13 @@ const App = () => {
         <form onSubmit={handleSubmit} id="ageForm">
           <h1>Please enter your birth year</h1>
           <p>This information allows us to tailor our service to your life</p>
-          <input type="number" id="ageInput" required></input>
+          <input
+            type="number"
+            id="ageInput"
+            min={Date().getFullYear() - 100}
+            max={Date().getFullYear()}
+            required
+          ></input>
           <button type="submit">Enter store</button>
         </form>
       </div>
