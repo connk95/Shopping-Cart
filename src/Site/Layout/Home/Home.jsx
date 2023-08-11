@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import paris from "..Home/background/paris2.jpg";
-import date from "../Home/background/date2.jpg";
-import christmas from "../Home/background/christmas2.jpg";
-import grad from "../Home/background/grad2.jpg";
+import paris from "../Home/background/paris-small.jpg";
+import date from "../Home/background/date-small.jpg";
+import christmas from "../Home/background/christmas-small.jpg";
+import grad from "../Home/background/grad-small.jpg";
 
 const images = [
   { title: "A trip to Paris", image: paris },
