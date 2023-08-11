@@ -230,7 +230,7 @@ label {
 
 .break {
   width: 100px;
-  height: 10px;
+  height: 5px;
   background-color: black;
   flex-grow: 1;
   margin-right: 10px;
