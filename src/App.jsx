@@ -35,8 +35,8 @@ const App = () => {
           <input
             type="number"
             id="ageInput"
-            min={1900}
-            max={2023}
+            min="1900"
+            max="2023"
             required
           ></input>
           <button type="submit">Enter store</button>
