@@ -7,7 +7,7 @@ Inspiration for this project came because I was frustrated with the lack of prod
 ## Table of Contents
 
 - [Features](https://github.com/connk95/Shopping-Cart/blob/main/README.md#features)
-- [Demo]((https://github.com/connk95/Shopping-Cart/blob/main/README.md#demo)
+- [Demo](https://github.com/connk95/Shopping-Cart/blob/main/README.md#features)
 - [Installation](https://github.com/connk95/Shopping-Cart/blob/main/README.md#installation)
 - [Code Description](https://github.com/connk95/Shopping-Cart/blob/main/README.md#code-description)
 - [Usage](https://github.com/connk95/Shopping-Cart/blob/main/README.md#usage)
