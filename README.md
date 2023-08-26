@@ -7,6 +7,7 @@ Inspiration for this project came because I was frustrated with the lack of prod
 ## Table of Contents
 
 - [Features](https://github.com/connk95/Shopping-Cart/blob/main/README.md#features)
+- [Demo]((https://github.com/connk95/Shopping-Cart/blob/main/README.md#demo)
 - [Installation](https://github.com/connk95/Shopping-Cart/blob/main/README.md#installation)
 - [Code Description](https://github.com/connk95/Shopping-Cart/blob/main/README.md#code-description)
 - [Usage](https://github.com/connk95/Shopping-Cart/blob/main/README.md#usage)
@@ -20,6 +21,10 @@ Inspiration for this project came because I was frustrated with the lack of prod
 - Add items to your cart, specifying the age you want.
 - View your cart at any time to see the list of selected items along with their ages and total prices.
 - Automatically calculate and display the total cost of items in your cart.
+
+## Demo
+
+https://connk95.github.io/Shopping-Cart/
 
 ## Installation
 
