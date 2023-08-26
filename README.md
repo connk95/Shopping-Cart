@@ -26,6 +26,28 @@ Welcome to the Shopping Cart project! This project aims to provide a simple and 
    npm start
    ```
 
+## Table of Contents
+
+[App.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/App.jsx)
+
+[Home.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Layout/Home/Home.jsx)
+
+[Nav.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Layout/Nav.jsx)
+
+[Shop.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Layout/Shop/Shop.jsx)
+
+[Sidebar.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Layout/Sidebar.jsx)
+
+[Product.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Products/Product.jsx)
+
+[ProductList.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Products/ProductList.jsx)
+
+[About.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Layout/Shop/Shop.test.jsx)
+
+[Cart.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Layout/Cart/Cart.jsx)
+
+[App.css](https://github.com/connk95/Shopping-Cart/blob/main/src/App.css)
+
 ## Usage
 
 1. Input your age on the title screen. This allows the program to display the age from 0 to your current age.
