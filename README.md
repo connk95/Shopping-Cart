@@ -4,6 +4,16 @@ Welcome to the Shopping Cart project! This project aims to provide a simple and 
 
 Inspiration for this project came because I was frustrated with the lack of product images for the store I wanted create on stock image sites. Most stock images were of some kind of event or action, so I decided that I would sell events, or memories, to my customers. This led me to create a kind of imaginary, science fictiony store where the company would upload events directly to your brain! You can even decide the age at which you wish to recall these events. Try it out!
 
+## Table of Contents
+
+- [Features](https://github.com/connk95/Shopping-Cart/blob/main/README.md#features)
+- [Installation](https://github.com/connk95/Shopping-Cart/blob/main/README.md#installation)
+- [Code Description](https://github.com/connk95/Shopping-Cart/blob/main/README.md#code-description)
+- [Usage](https://github.com/connk95/Shopping-Cart/blob/main/README.md#usage)
+- [Contributing](https://github.com/connk95/Shopping-Cart/blob/main/README.md#contributing)
+- [License](https://github.com/connk95/Shopping-Cart/blob/main/README.md#license)
+- [Acknowledgements](https://github.com/connk95/Shopping-Cart/blob/main/README.md#acknowledgements)
+
 ## Features
 
 - Browse through a variety of "memories" with their names, prices, selectable age, and images.
@@ -28,7 +38,7 @@ Inspiration for this project came because I was frustrated with the lack of prod
    npm start
    ```
 
-## Table of Contents
+## Code Description
 
 [App.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/App.jsx) - Contains states for items added to cart, available products, and user age. This module also contains the functions for submitting user age, and removing items from the cart. This module renders the age input screen, and once selected, renders the home page and all routes.
 
