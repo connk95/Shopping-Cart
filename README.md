@@ -2,6 +2,8 @@
 
 Welcome to the Shopping Cart project! This project aims to provide a simple and user-friendly shopping cart implementation using CSS, and JavaScript with React. With this shopping cart, users can easily add and remove items, creating a seamless shopping experience.
 
+Inspiration for this project came because I was frustrated with the lack of product images for the store I wanted create on stock image sites. Most stock images were of some kind of event or action, so I decided that I would sell events, or memories, to my customers. This led me to create a kind of imaginary, science fictiony store where the company would upload events directly to your brain! You can even decide the age at which you wish to recall these events. Try it out!
+
 ## Features
 
 - Browse through a variety of "memories" with their names, prices, selectable age, and images.
