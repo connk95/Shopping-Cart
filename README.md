@@ -1,6 +1,6 @@
 # Shopping Cart Project
 
-Welcome to the Shopping Cart project! This project aims to provide a simple and user-friendly shopping cart implementation using HTML, CSS, and JavaScript with React. With this shopping cart, users can easily add, and remove items, creating a seamless shopping experience.
+Welcome to the Shopping Cart project! This project aims to provide a simple and user-friendly shopping cart implementation using CSS, and JavaScript with React. With this shopping cart, users can easily add, and remove items, creating a seamless shopping experience.
 
 ## Features
 
