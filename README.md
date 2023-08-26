@@ -22,9 +22,9 @@ Welcome to the Shopping Cart project! This project aims to provide a simple and 
    ```
 
 3. Run the app and view in your browser:
-  ```
-  npm start
-  ```
+   ```
+   npm start
+   ```
 
 ## Usage
 
