@@ -48,9 +48,9 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgements
 
-- This project was created by [Your Name].
-- Product images were sourced from [Image Source].
-- Special thanks to [Name] for their guidance and support.
+- This project was created by Connor Ketcheson.
+- Product images were sourced from Pixabay and Pexels.
+- Special thanks to Edward Peng for their guidance and support.
 
 Enjoy your shopping experience with the Shopping Cart project! If you have any questions or feedback, please don't hesitate to contact us.
 
