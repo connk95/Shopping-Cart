@@ -56,7 +56,7 @@ Welcome to the Shopping Cart project! This project aims to provide a simple and 
 4. Filter departments using the sidebar.
 5. Select the age you would like to implement this memory using the drop-down menu.
 6. Click the "Add to Cart" button next to the desired item to add it to your shopping cart.
-7. To view your cart, click on the "Cart" icon at the top of the page.
+7. To view your cart, click on "Cart" at the top of the page.
 8. In the cart view, you can see all items, and remove them.
 9. The total cost of the items in your cart will be automatically calculated and displayed.
 
