@@ -28,11 +28,11 @@ Welcome to the Shopping Cart project! This project aims to provide a simple and 
 
 ## Table of Contents
 
-[App.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/App.jsx)
+[App.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/App.jsx) - Contains states for items added to cart, available products, and user age. This module also contains the functions for submitting user age, and removing items from the cart. This module renders the age input screen, and once selected, renders the home page.
 
-[Home.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Layout/Home/Home.jsx)
+[Home.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Layout/Home/Home.jsx) - Contains a state and function which handle the changing background image.
 
-[Nav.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Layout/Nav.jsx)
+[Nav.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Layout/Nav.jsx) - Links to the "Memories", "About", and "Cart" pages.
 
 [Shop.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Layout/Shop/Shop.jsx)
 
