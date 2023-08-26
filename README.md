@@ -28,25 +28,25 @@ Welcome to the Shopping Cart project! This project aims to provide a simple and 
 
 ## Table of Contents
 
-[App.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/App.jsx) - Contains states for items added to cart, available products, and user age. This module also contains the functions for submitting user age, and removing items from the cart. This module renders the age input screen, and once selected, renders the home page.
+[App.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/App.jsx) - Contains states for items added to cart, available products, and user age. This module also contains the functions for submitting user age, and removing items from the cart. This module renders the age input screen, and once selected, renders the home page and all routes.
 
 [Home.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Layout/Home/Home.jsx) - Contains a state and function which handle the changing background image.
 
-[Nav.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Layout/Nav.jsx) - Links to the "Memories", "About", and "Cart" pages.
+[Nav.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Layout/Nav.jsx) - A header with links to the "Memories", "About", and "Cart" pages.
 
-[Shop.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Layout/Shop/Shop.jsx)
+[Shop.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Layout/Shop/Shop.jsx) - Contains states for departments, selected department, displayed products, and ages available to select for the user. This module also contains the functions to filter products by department, and add products to the cart. This module renders the sidebar and individual product cards.
 
-[Sidebar.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Layout/Sidebar.jsx)
+[Sidebar.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Layout/Sidebar.jsx) - A sidebar containing the list of departments.
 
-[Product.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Products/Product.jsx)
+[Product.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Products/Product.jsx) - Contains state for the age selected for each product before adding to cart. Includes an image, title, price, input for age, and button to add to cart.
 
-[ProductList.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Products/ProductList.jsx)
+[ProductList.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Products/ProductList.jsx) - A list of all products, contained in an array. This array contains an object for each department, which contains an array, which contains objects for each available item. The item objects contain a title, asset, and price. This structure makes it easy to add, remove, or modify the products in the store.
 
-[About.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Layout/Shop/Shop.test.jsx)
+[About.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Layout/Shop/Shop.test.jsx) - Renders a page with a description of the product and service.
 
-[Cart.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Layout/Cart/Cart.jsx)
+[Cart.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Layout/Cart/Cart.jsx) - Renders the cart page which allows the users to view their chosen products with a thumbnail image, title, selected age, and price. The total price is calculated automatically.
 
-[App.css](https://github.com/connk95/Shopping-Cart/blob/main/src/App.css)
+[App.css](https://github.com/connk95/Shopping-Cart/blob/main/src/App.css) - CSS for the entire project.
 
 ## Usage
 
@@ -72,7 +72,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 - This project was created by Connor Ketcheson.
 - Product images were sourced from Pixabay and Pexels.
-- Special thanks to Edward Peng for their guidance and support.
+- Special thanks to [Edward Peng](https://github.com/edwardnz2017) for their guidance and support.
 
 Enjoy your shopping experience with the Shopping Cart project! If you have any questions or feedback, please don't hesitate to contact us.
 
