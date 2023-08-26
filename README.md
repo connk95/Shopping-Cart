@@ -42,7 +42,7 @@ Inspiration for this project came because I was frustrated with the lack of prod
 
 [App.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/App.jsx) - Contains states for items added to cart, available products, and user age. This module also contains the functions for submitting user age, and removing items from the cart. This module renders the age input screen, and once selected, renders the home page and all routes.
 
-[Home.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Layout/Home/Home.jsx) - Contains a state and function which handle the changing background image.
+[Home.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Layout/Home/Home.jsx) - Contains a state and function which handles the changing background image.
 
 [Nav.jsx](https://github.com/connk95/Shopping-Cart/blob/main/src/Site/Layout/Nav.jsx) - A header with links to the "Memories", "About", and "Cart" pages.
 
